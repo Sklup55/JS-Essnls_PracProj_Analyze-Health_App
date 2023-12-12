@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Health Analysis Data</title>
+  <link rel="stylesheet" href="./health.css">
+</head>
+<body>
+   <nav><h1>Health Analysis Data</h1>
+<ul>
+  <li><a href="#" id="showAll">Show All </a></li>
+  <li><a href="#" id="searchByCondition">Search by Condition </a></li>
+  <li><a href="#" id="filterByAge">Filter by Age </a></li>
+</ul>
+</nav>
+
+<h1>Healthcare Data Analysis</h1>
+<div>
+<label for="name">Name:</label>
+<input type="text" id="name">
+</div>
+<div>
+<label>Gender:</label>
+<label for="male">Male</label>
+<input type="radio" name="gender" id="male" value="Male">
+<label for="female">Female</label>
+<input type="radio" name="gender" id="female" value="Female">
+</div>
+<div>
+<label for="age">Age:</label>
+<input type="number" id="age">
+</div>
+<div>
+<label for="condition">Condition:</label>
+<select id="condition">
+  <option value="">Select condition</option>
+  <option value="Diabetes">Diabetes</option>
+  <option value="Thyroid">Thyroid</option>
+  <option value="High Blood Pressure">High Blood Pressure</option>
+</select>
+</div>
+<button id="addPatient">Add Patient</button>
+<h2>Analysis Report</h2>
+<div id="report"></div>
+
+<script src="./health_analysis.js"></script>
+</body>
+</html>
